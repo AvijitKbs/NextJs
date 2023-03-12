@@ -1,0 +1,23 @@
+//Interview questions
+
+Argument vs parameter-Arguments are called at time of sending and parameters are called at time of receiving.
+Rest vs spread -Rest are called when we have to receive a inuput ,e.g- suppose,we have to receive many arguments as parameters ,in that case to receive all at short syntax we use rest. vs when we have to access or get output of every items in an array / object ,we use spread.Both have same syntax and also equivalent but not equal.
+SetInterval or settimeout doesn't work properly in for loop,they have to wait till loop is over and then continue with the last item of i in the loop.
+e.g-
+for(var i = 0; i < 5; i++) {
+  setTimeout(() => {
+    console.log(i)
+  }, 1000);
+}
+will result in printing 5 onetime.E.g we write
+
+=================
+//NextJS
+
+Every file in public folder is publically available.
+Pages folder-
+
+We use [] ,to use dynamic routes.
+Next js gives us flexibility to use Head , Body differently
+while using script tag in next , sometimes it takes time to load script,so we use strategy=lazyload to enable to load script only
+after page's render.
