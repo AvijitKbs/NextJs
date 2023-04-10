@@ -11,6 +11,22 @@ for(var i = 0; i < 5; i++) {
 }
 will result in printing 5 onetime.E.g we write
 
+ForEach loop vs map is for each loop returns undefined while map returns a new array and map is chainable i.e can use filter,sort,reduce methods while in case of for each we can't use them and with foreach we can't use them as it gives undefined in return.We use forEach if we don't want return data,and map if we want returned array.
+
+ES6 features
+What are callbacks ?
+/
+difference between state and variable in react ?
+We use state instead of variables to update state beacuse state is under immutability (core concept) under react,while declaring variable will
+make our react app mutable which may cause to behave our app in an inappropriate way as in every change state rerenders but in case of variables
+that does not occur.
+reference-https://www.freecodecamp.org/news/what-every-react-developer-should-know-about-state/
+stale state-this problem ocurs when we update state inside a closure,i.e the state may not take the latest value of state immediately ,which can be
+          handled using setTimeout.
+/
+Difference between call vs apply,bind ?
+image in public doesn't work if browser router used in case of nested router,we have to keep images in src and import and use images.
+Filder used for debugging http requests(api),while postman is a complete API development environment.
 =================
 //NextJS
 
@@ -21,3 +37,13 @@ We use [] ,to use dynamic routes.
 Next js gives us flexibility to use Head , Body differently
 while using script tag in next , sometimes it takes time to load script,so we use strategy=lazyload to enable to load script only
 after page's render.
+Don't use Next's Script in head section in nextjs.
+Nextjs gives Image component to optimize and lazyload large images
+Next link-to navigate
+Navigate page can be created in public
+style jsx
+component.Module.css-for component level styles
+Global.css -for global style in all components.
+
+Server side rendering-Load api data before preparing HTML (by browser),then give it to browser,the full HTML,which is very helpful for SEO purposes.
+Client Side Rendering-
