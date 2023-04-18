@@ -27,12 +27,17 @@ stale state-this problem ocurs when we update state inside a closure,i.e the sta
 Difference between call vs apply,bind ?
 image in public doesn't work if browser router used in case of nested router,we have to keep images in src and import and use images.
 Filder used for debugging http requests(api),while postman is a complete API development environment.
+
+For e.g- if one child is in a parent then if we click on child then both child and parent will be called and if we call parent then only parent will be called,
+This is called event bubbling i.e child bubbles it's event upto it's parent DOM  .
+To stop this we use e.stopPropagation()
+https://stackoverflow.com/questions/1369035/how-do-i-prevent-a-parents-onclick-event-from-firing-when-a-child-anchor-is-cli
+https://www.freecodecamp.org/news/event-bubbling-in-javascript/#:~:text=The%20%22Event%20Bubbling%22%20behavior%20makes,element%20is%20called%20Event%20Delegation.
 =================
 //NextJS
 
 Every file in public folder is publically available.
 Pages folder-
-
 We use [] ,to use dynamic routes.
 Next js gives us flexibility to use Head , Body differently
 while using script tag in next , sometimes it takes time to load script,so we use strategy=lazyload to enable to load script only

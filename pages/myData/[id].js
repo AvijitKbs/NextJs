@@ -21,7 +21,7 @@ const post=(props)=>{
 }
 export async function getServerSideProps(context){
     // console.log("context.query",context.query.id)
-    let data = await fetch(`http://localhost:3000/api/BlogSingle?slug=${context.query.id}`)
+    let data = await fetch(`http://localhost:4000/api/BlogSingle?slug=${context.query.id}`)
     let result=await data.json()
     return{
         props:{result}

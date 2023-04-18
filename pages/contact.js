@@ -13,7 +13,7 @@ const Contact = () => {
     e.preventDefault()
     const data = {phone, name, email, desc};
 
-    fetch('http://localhost:3000/api/ContactUs', {
+    fetch('http://localhost:4000/api/ContactUs', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
