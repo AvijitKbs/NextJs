@@ -15,7 +15,19 @@ ForEach loop vs map is for each loop returns undefined while map returns a new a
 
 ES6 features
 What are callbacks ?
-/
+ for(var i=0;i<3;i++){
+     setTimeout(()=>{
+         console.log(i),1
+     })
+ }
+ for(let i=0;i<3;i++){
+     setTimeout(()=>{
+         console.log(i),1
+     })
+ }
+    As var in global scope it fires the i's value as 3 when enters the loop or timeout.
+    But as in let case as it is in block scope,when it  enters to function ,it goes as a new value each time after the loop.
+
 difference between state and variable in react ?
 We use state instead of variables to update state beacuse state is under immutability (core concept) under react,while declaring variable will
 make our react app mutable which may cause to behave our app in an inappropriate way as in every change state rerenders but in case of variables
